@@ -1,14 +1,14 @@
  # config valid for Capistrano 3.1
  # require 'capistrano/ext/multistage'
 
-lock '3.5.0'
+lock '3.10.0'
 
 set :stages, ["production"]
 set :default_stage, "production"
 set :ssh_options, {:forward_agent => true}
 
 set :application, 'capistrano'
-set :repo_url 'git@github.com:toddwebnet/capistrano-test.git'
+set :repo_url, 'git@github.com:toddwebnet/capistrano_test.gitl '
 set :user, "toddwebnet"
 
  set :linked_dirs, %w(my_shared_directory)
@@ -23,4 +23,3 @@ set :user, "toddwebnet"
  end
 
  after "deploy:updated", "deploy:print_server_name"
- 
