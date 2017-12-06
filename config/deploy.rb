@@ -8,7 +8,7 @@ set :default_stage, "production"
 set :ssh_options, {:forward_agent => true}
 
 set :application, 'capistrano'
-set :repo_url, 'git@github.com:toddwebnet/capistrano_test.gitl '
+set :repo_url, 'git@github.com:toddwebnet/capistrano_test.git '
 set :user, "toddwebnet"
 
  set :linked_dirs, %w(my_shared_directory)
