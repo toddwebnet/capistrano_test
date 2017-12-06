@@ -20,6 +20,7 @@ set :user, "toddwebnet"
        execute "hostname"
      end
    end
+   after :starting, 'composer:install_executable'
  end
 
  after "deploy:updated", "deploy:print_server_name"
